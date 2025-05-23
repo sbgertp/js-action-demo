@@ -21,10 +21,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Changed to match action.yml node20 runtime
+          node-version: '>=22.5.1' # Changed to match action.yml node20 runtime
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       # Test with custom input
       - name: Test Custom Input

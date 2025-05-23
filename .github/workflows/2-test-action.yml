@@ -24,7 +24,7 @@ jobs:
           node-version: '>=22.5.1' # Changed to match action.yml node20 runtime
 
       - name: Install dependencies
-        run: npm ci --verbose
+        run: npm ci
 
       # Test with custom input
       - name: Test Custom Input

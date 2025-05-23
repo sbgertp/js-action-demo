@@ -27,7 +27,7 @@ jobs:
           node-version: '>=22.5.1'
 
       - name: Install dependencies
-        run: npm ci --verbose
+        run: npm ci
 
       - name: Build
         run: npm run build
